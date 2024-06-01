@@ -3,11 +3,7 @@ import { Fetch } from "./model/bridge.js";
 import { showMessage, loading, showOptions } from "./model/MyAlert.js";
 $(() => {
   const validator = navigator.userAgent;
-   if (!validator.match(/iPhone/i)) {
-     window.location.href = "page.html";
-    return;
-  }
-  //HAHA
+  
   if (!localStorage.getItem("isLoggedIn")) {
     window.location.href = "index.html";
     return;
