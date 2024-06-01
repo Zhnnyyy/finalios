@@ -4,18 +4,7 @@ import { showMessage, loading } from "./model/MyAlert.js";
 $(() => {
   const validator = navigator.userAgent;
    
-  if (
-    !localStorage.getItem("setEmail") ||
-    localStorage.getItem("setEmail") == null
-  ) {
-    if (localStorage.getItem("isLoggedIn")) {
-      window.location.href = "dashboard.html";
-    } else {
-      window.location.href = "index.html";
-    }
-    window.location.href = "index.html";
-    return;
-  }
+  
   if (!localStorage.getItem("isLoggedIn")) {
     window.location.href = "index.html";
     return;
