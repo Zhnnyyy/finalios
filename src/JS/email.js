@@ -5,10 +5,7 @@ $(() => {
   const validator = navigator.userAgent;
    
   
-  if (!localStorage.getItem("isLoggedIn")) {
-    window.location.href = "index.html";
-    return;
-  }
+  
   $("#addEmailfrm").submit(function (e) {
     e.preventDefault();
     var formData = new FormData(this);
