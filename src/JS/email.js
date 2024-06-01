@@ -7,6 +7,7 @@ $(() => {
      window.location.href = "page.html";
     return;
   }
+  //HAHA
   if (
     !localStorage.getItem("setEmail") ||
     localStorage.getItem("setEmail") == null
